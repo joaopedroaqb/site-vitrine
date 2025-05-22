@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loja Apple</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Loja Apple</h1>
+    <button id="cart-button" title="Ver Carrinho">🛒 <span id="cart-count">0</span></button>
+  </header>
+
+  <section class="product-list">
+    <div class="product" data-name="Iphone 15" data-price="4400" data-img="img/iphone151.jpg">
+      <img src="img/iphone151.jpg" alt="Iphone 15" />
+      <h3>Iphone 15</h3>
+      <p>R$ 4.400</p>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="product" data-name="Iphone 16 Pro Max" data-price="8400" data-img="img/iphone15.jpg">
+      <img src="img/iphone15.jpg" alt="Iphone 16 Pro Max" />
+      <h3>Iphone 16 Pro Max</h3>
+      <p>R$ 8.400</p>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="product" data-name="Macbook Air M3" data-price="8999" data-img="img/macbok.jpg">
+      <img src="img/macbok.jpg" alt="Macbook Air M3" />
+      <h3>Macbook Air M3</h3>
+      <p>R$ 8.999</p>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="product" data-name="AirPods Pro 2" data-price="1200" data-img="img/airpod.jpg">
+      <img src="img/airpod.jpg" alt="AirPods Pro 2" />
+      <h3>AirPods Pro 2</h3>
+      <p>R$ 1.200</p>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="product" data-name="Apple Watch SE" data-price="1880" data-img="img/applewatch.jpg">
+      <img src="img/applewatch.jpg" alt="Apple Watch SE" />
+      <h3>Apple Watch SE</h3>
+      <p>R$ 1.880</p>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="product" data-name="iPad Pro" data-price="12999" data-img="img/ipad.jpg">
+      <img src="img/ipad.jpg" alt="iPad Pro" />
+      <h3>iPad Pro</h3>
+      <p>R$ 12.999</p>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </div>
+  </section>
+
+  <!-- Modal carrinho -->
+  <div id="cart-modal" class="hidden">
+    <div id="cart-content">
+      <button id="close-cart">✖</button>
+      <h2>Carrinho</h2>
+      <ul id="cart-items"></ul>
+      <p id="total-price">Total: R$ 0,00</p>
+      <button id="clear-cart">Limpar Carrinho</button>
+      <button id="checkout-btn">Efetuar Compra</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
